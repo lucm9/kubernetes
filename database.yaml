@@ -36,7 +36,7 @@ spec:
       initContainers:
       - name: init-db
         image: eon01/quotes-data:v1
-        command: ['mysql', '-u$MYSQL_USER', '-p$MYSQL_ROOT_PASSWORD', '-h', '0.0.0.0', '<', '/tmp/mydatabase.sql']
+        command: ['mysql', '-u$MYSQL_USER', '-p$MYSQL_ROOT_PASSWORD', '-h','0.0.0.0', '<', '/tmp/mydatabase.sql']
         env:
         - name: MYSQL_ROOT_PASSWORD
           value: root

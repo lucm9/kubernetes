@@ -15,7 +15,7 @@ spec:
         app: api
     spec:
       containers:
-      - image: lucmally/quotes-back:v4
+      - image: lucmally/quotes-back:v5
         name: api
         ports:
         - containerPort: 3000
